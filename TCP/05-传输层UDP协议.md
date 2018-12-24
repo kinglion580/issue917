@@ -39,6 +39,13 @@ TCP/IP 协议栈传输层有两个重要协议——UDP 和 TCP，不同的应�
 
 - 编号 49152～65535 为 **短暂端口号** ，是留给客户进程选择暂时使用的，使用结束后，这类端口号会被放开以供其它程序使用。
 
+下面使用 `netstat` 命令列出了监听中的端口：
+
+![图片描述](https://dn-simplecloud.shiyanlou.com/uid/8797/1545648475874.png-wm)
+
+> 其中各选项代表的含义可以使用 `netstat --help` 查看，或者参考 [netstat命令](http://man.linuxde.net/netstat)
+
+可以看到都是 TCP 协议的。不过后面我们会编写一个程序来模拟发送 UDP 报文，并使用 tcpdump 工具抓包，来帮助大家理解 UDP 协议。
 
 ## 三、UDP 概述
 

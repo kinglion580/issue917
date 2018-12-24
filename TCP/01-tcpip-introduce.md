@@ -13,6 +13,8 @@ TCP/IP（Transmission Control Protocol/Internet Protocol）是传输控制协议
 
 TCP/IP 不是一个协议，而是一个协议族的统称，里面包括了 `IP` 协议、`ICMP` 协议、`TCP` 协议、以及 `http`、`ftp`、`pop3` 协议等。网络中的计算机都采用这套协议族进行互联。
 
+（参考[TCP/IP 背景](https://blog.csdn.net/ZX714311728/article/details/53224121)）
+
 #### 网络协议栈架构
 
 提到网络协议栈结构，最著名的当属 OSI 七层模型，但是 TCP/IP 协议族的结构则稍有不同，它们之间的层次结构有如图对应关系：
@@ -32,7 +34,6 @@ TCP/IP 不是一个协议，而是一个协议族的统称，里面包括了 `IP
 ![1-1-2](https://doc.shiyanlou.com/document-uid18510labid448timestamp1482199421440.png/wm)
 
 本门课程，就是从底向上分层次对 TCP/IP 的各协议做介绍。
-
 
 ## 二、预备知识
 
@@ -100,6 +101,8 @@ IP 地址是用来发现和查找网络中的地址的，但是不同程序如�
 ![1-2.5-1](https://doc.shiyanlou.com/TCP_IP/TCP-1-05.png/wm)
 
 **分用**：当主机收到一个数据帧时，数据就从协议层底向上升，通过每一层时，检查并去掉对应层次的报文首部或尾部，与封装过程正好相反。
+
+（参考[About TCP/TP](https://sukianata.coding.me/2018/07/13/About-TCP-TP/)）
 
 ### 2.6 RFC
 
