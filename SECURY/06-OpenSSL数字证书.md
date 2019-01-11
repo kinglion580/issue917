@@ -187,3 +187,25 @@ openssl x509 -req -in req.csr -out syl.crt -CA ca.crt -CAkey ca.key -CAcreateser
 
 
 
+证书查看，导出，格式转换：
+
+查看：
+
+```
+openssl x509 -subject -enddate -noout -in syl.srt
+```
+
+导出：
+
+```
+openssl pkcs12 -in syl.srt -inkey key.pem -export -out syl.p12
+```
+
+> -export：指定将创建 PKCS#12 文件(二进制的文件，为了方便不同操作系统共享信息，备份等），而不是进行解析
+
+转换：
+
+```
+openssl pkcs12 -in syl.p12 -out syl.pem -nodes
+```
+
