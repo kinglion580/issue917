@@ -15,11 +15,9 @@ enable_checker: true
 
 **逻辑通信**：看起来数据似乎是沿着双向箭头在传输层水平传输的，但实际上是沿图中的虚线经多个协议层次而传输。
 
-![5-1-1](https://doc.shiyanlou.com/TCP_IP/tcp-5-01.png/wm)
+![图片描述](https://dn-simplecloud.shiyanlou.com/uid/8797/1548916469946.png-wm)
 
-TCP/IP 协议栈传输层有两个重要协议——UDP 和 TCP，不同的应用进程在传输层使用 TCP 或 UDP 之一：
-
-![5-1-2](https://doc.shiyanlou.com/TCP_IP/tcp-5-02.png/wm)
+TCP/IP 协议栈传输层有两个重要协议——UDP 和 TCP，不同的应用进程在传输层使用 TCP 或 UDP 之一。
 
 这一节先介绍比较简单的 UDP，比较复杂的 TCP 将在下一节讨论。
 
@@ -67,13 +65,13 @@ UDP(User Datagram Protocol)用户数据报协议，它只在 IP 数据报服务�
 
 从应用层到传输层，再到网络层的各层次封装：
 
-![5-3-1](https://doc.shiyanlou.com/TCP_IP/tcp-5-03.png/wm)
+![图片描述](https://dn-simplecloud.shiyanlou.com/uid/8797/1548917382675.png-wm)
 
 ## 四、UDP 报文
 
 UDP 数据报可分为两部分：UDP 报头和数据部分。其中数据部分是应用层交付下来的数据。UDP 报头总共 8 字节，而这 8 字节又分为 4 个字段：
 
-![5-4-1](https://doc.shiyanlou.com/TCP_IP/tcp-5-04.png/wm)
+![图片描述](https://dn-simplecloud.shiyanlou.com/uid/8797/1548918088748.png-wm)
 
 - 源端口：2 字节，在对方需要回信时可用，不需要时可以全 0；
 
